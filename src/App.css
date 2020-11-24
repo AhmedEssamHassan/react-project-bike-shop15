@@ -1,32 +1,83 @@
 .App {
-  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
+}
+/* for first li in navbar */
+.active {
+  border-bottom: solid #034ea1 2px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.active:hover .home-link {
+  color: #034ea1 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.link-container:hover .link {
+  color: #034ea1 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  color: #0a0a23;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+/* button */
+.button {
+  color: #f8f9fa;
+  background-color: #034ea1;
+  padding: 7px 25px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.button:hover {
+  color: #fff043;
+}
+
+iframe {
+  width: 200px;
+  height: 200px;
+  border: #f8f9fa solid 10px;
+}
+
+.react-icon {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* animation for shop-icon */
+.shop-icon {
+  position: absolute;
+  right: 0.7rem;
+  top: -1rem;
+  left: 40%;
+  animation: up-down 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.335) infinite
+    alternate;
+}
+
+@keyframes up-down {
+  100% {
+    top: 0.5rem;
+  }
+}
+
+/* when hovering on item */
+.add {
+  transition: all 0.5s ease;
+}
+.item:hover .add {
+  top: 0;
+}
+
+/* for nav Links */
+a:hover {
+  text-decoration: none !important;
+}
+
+p {
+  text-align: justify;
 }

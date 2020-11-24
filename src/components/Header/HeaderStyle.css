@@ -1,0 +1,15 @@
+span {
+  color: #034ea1;
+  font-style: italic;
+}
+button {
+  z-index: 9;
+}
+.button:hover i {
+  display: flex !important;
+  margin-left: 7px;
+}
+
+.scrolled {
+  background-color: #0f0f0f;
+}

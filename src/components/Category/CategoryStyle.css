@@ -1,0 +1,12 @@
+.catgContainer:hover .catgTitile {
+  animation: moveToTop 0.5s forwards;
+}
+
+@keyframes moveToTop {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
